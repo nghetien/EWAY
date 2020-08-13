@@ -1,0 +1,9 @@
+.hero-restaurent{
+    // height: 600px;
+    background-image: url("./img/bg-restaurent.jpg");
+    background-position: center;
+    background-size: cover;
+    &__container{
+        padding: 11rem 0 !important;
+    }
+}

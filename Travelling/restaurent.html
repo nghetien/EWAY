@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./static/css/swiper.min.css">
+    <link rel="stylesheet" href="./static/main.css">
+    <script src="https://kit.fontawesome.com/0496651f2b.js" crossorigin="anonymous"></script>
+    <title>Bootstrap</title>
+    <script src="./static/js/swiper.min.js"></script>
+    <script src="./static/js/jQuery/jQuery.js"></script>
+</head>
+<body>
+    <nav class="top-nav shadow navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container-fluid">
+            <div class="top-nav__logo d-flex">
+                <a class="navbar-brand font-weight-bolder" href="/">OGGY TREVAL</a>
+            </div>
+            <button class="top-nav__reponsive navbar-toggler" data-toggle="collapse" data-target="#idTopNavMenu" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="top-nav__menu collapse navbar-collapse justify-content-end" id="idTopNavMenu">
+                <ul class="navbar-nav">
+                    <li class="top-nav__home top-nav__menu-item active nav-item dropdown">
+                        <a class="nav-link btn dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                        <div class="dropdown-menu">
+                            <a href="/" class="dropdown-item">Rooms</a>
+                            <a href="./restaurent.html" class="dropdown-item">Restaurant</a>
+                            <a href="/" class="dropdown-item">Travel</a>
+                            <a href="/" class="dropdown-item">Real estate</a>
+                        </div>
+                    </li>
+                    <li class="top-nav__template top-nav__menu-item nav-item position-static dropdown">
+                        <a href="/"class="top-nav__template-link nav-link btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Template</a>
+                        <div class="top-nav__template-menu dropdown-menu shadow-lg m-0 p-0" aria-hidden="true" role="menu" tabindex="-1">
+                            <div class="row">
+                                <div class="top-nav__template-left col-xl-9 col-lg-12 p-0">
+                                    <div class="row top-nav__template-left-top">
+                                        <div class="col-lg-3">
+                                            <div class="mb-3">
+                                                <h5 class="font-weight-bold text-dark mb-3">HOMEPAGE</h5>
+                                                <ul>
+                                                    <li class="list-unstyled"><a href="/" class="text-secondary">Rooms</a></li>
+                                                    <li class="list-unstyled"><a href="/" class="text-secondary">Restaurants</a></li>
+                                                    <li class="list-unstyled"><a href="/" class="text-secondary">Travel</a></li>
+                                                    <li class="list-unstyled"><a href="/" class="text-secondary">Real estateNew</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mb-3">
+                                                <h5 class="font-weight-bold text-dark mb-3">RESTAURANTS</h5>
+                                                <ul>
+                                                    <li class="list-unstyled"><a href="/" class="text-secondary">Category - Map on the top</a></li>
+                                                    <li class="list-unstyled"><a href="/" class="text-secondary">Category - Map on the right</a></li>
+                                                    <li class="list-unstyled"><a href="/" class="text-secondary">Category - no map</a></li>
+                                                    <li class="list-unstyled"><a href="/" class="text-secondary">Restaurant detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="mb-3">
+                                                <h5 class="font-weight-bold text-dark mb-3">ROOMS</h5>
+                                                <ul>
+                                                    <li  class="list-unstyled"><a class="text-secondary" href="/">Category - Map on the top</a></li>
+                                                    <li  class="list-unstyled"><a class="text-secondary" href="/">Category - Map on the right</a></li>
+                                                    <li  class="list-unstyled"><a class="text-secondary" href="/">Category - no map</a></li>
+                                                    <li  class="list-unstyled"><a class="text-secondary" href="/">Room detail</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mb-3">
+                                                <h5 class="font-weight-bold text-dark mb-3">BLOG</h5>
+                                                <ul>
+                                                    <li  class="list-unstyled"><a class="text-secondary" href="/">Blog</a></li>
+                                                    <li  class="list-unstyled"><a class="text-secondary" href="/">Post</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="mb-3">
+                                                <h5 class="font-weight-bold text-dark mb-3">PAGES</h5>
+                                                <ul>
+                                                    <li class="list-unstyled"><a class="text-secondary" href="/">ComparisonNew</a></li>
+                                                    <li class="list-unstyled"><a class="text-secondary" href="/">TeamNew</a></li>
+                                                    <li class="list-unstyled"><a class="text-secondary" href="/">Contact</a></li>
+                                                    <li class="list-unstyled"><a class="text-secondary" href="/">Pricing</a></li>
+                                                    <li class="list-unstyled"><a class="text-secondary" href="/">Text page</a></li>
+                                                    <li class="list-unstyled"><a class="text-secondary" href="/">F.A.Q.s</a></li>
+                                                    <li class="list-unstyled"><a class="text-secondary" href="/">Coming soon</a></li>
+                                                    <li class="list-unstyled"><a class="text-secondary" href="/">404 pageNew</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mb-3">
+                                                <h5 class="font-weight-bold text-dark mb-3">HOST</h5>
+                                                <ul>
+                                                    <li class="list-unstyled"><a class="text-secondary" href="/">Add new listing - 6 pages</a></li>
+                                                    <li class="list-unstyled"><a class="text-secondary" href="/">Bookings - list view</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="mb-3">
+                                                <h5 class="font-weight-bold text-dark mb-3">USER</h5>
+                                                <ul>
+                                                    <li  class="list-unstyled"><a  class="text-secondary" href="/">Profile</a></li>
+                                                    <li  class="list-unstyled"><a  class="text-secondary" href="/">Account</a></li>
+                                                    <li  class="list-unstyled"><a  class="text-secondary" href="/">Personal info - forms</a></li>
+                                                    <li  class="list-unstyled"><a  class="text-secondary" href="/">Password & security - forms</a></li>
+                                                    <li  class="list-unstyled"><a  class="text-secondary" href="/">Sign in</a></li>
+                                                    <li  class="list-unstyled"><a  class="text-secondary" href="/">Sign up</a></li>
+                                                    <li  class="list-unstyled"><a  class="text-secondary" href="/">Booking process - 4 pages</a></li>
+                                                    <li  class="list-unstyled"><a  class="text-secondary" href="/">Bookings - grid view</a></li>
+                                                    <li  class="list-unstyled"><a  class="text-secondary" href="/">Booking detail</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="top-nav__template-left-bottom bg-light row">
+                                        <div class="col-xl-3 col-lg-6">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-user-friends mr-3 top-nav__bottom-icon"></i>
+                                                <div>
+                                                    <h5  class="font-weight-bold text-dark">BEST</h5>
+                                                    <p class="text-secondary">Find the perfect place</p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-user-friends mr-3 top-nav__bottom-icon"></i>
+                                                <div>
+                                                    <h5  class="font-weight-bold text-dark">BEST</h5>
+                                                    <p class="text-secondary">Find the perfect place</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-user-friends mr-3 top-nav__bottom-icon"></i>
+                                                <div>
+                                                    <h5  class="font-weight-bold text-dark">BEST</h5>
+                                                    <p class="text-secondary">Find the perfect place</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-user-friends mr-3 top-nav__bottom-icon"></i>
+                                                <div>
+                                                    <h5  class="font-weight-bold text-dark">BEST</h5>
+                                                    <p class="text-secondary">Find the perfect place</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="top-nav__template-right col-lg-3">
+                                    <div class="top-nav__template-image"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="top-nav__menu-item nav-item"><a href="/" class="nav-link">Item</a></li>
+                    <li class="top-nav__menu-item nav-item"><a href="/" class="nav-link">Docs</a></li>
+                    <li class="top-nav__menu-item nav-item"><a href="/" class="nav-link">Sign in</a></li>
+                    <li class="top-nav__menu-item nav-item"><a href="/" class="nav-link">Sign up</a></li>
+                </ul>
+                <div class="top-nav__input d-none d-xl-block">
+                    <form class="form-inline">
+                        <div class="top-nav__form-search">
+                            <label for="Search" class="top-nav__label-search label-absolute">
+                                <i class="fa fa-search"></i>
+                            </label>
+                            <input type="text" id="search_search" placeholder="Search" aria-label="Search" class="border-1 bg-gray-200 form-control-sm form-control">
+                            <button class="top-nav__btn-search btn btn-sm btn-outline-primary" type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="hero-restaurent">
+        <div class="hero-restaurent__container container py-6">
+            <div class="hero-restaurent__introduct">
+                <h2 class="hero-restaurent__itr-big font-weight-bolder text-center text-light display-3">Discover Directory</h2>
+                <p class="hero-restaurent__itr-small text-light text-center">Uncover the best places to eat, drink, and shop nearest to you.</p>
+            </div>
+        </div>
+    </section>
+    <section class="search-toolbar">
+        <div class="container">
+            <form action="" class="search-toolbar__form shadow-lg px-3 p-3" method="post">
+                <div class="row search-toolbar__row m-0">
+                    <div class="search-toolbar__list col-lg-4 py-2 px-0">
+                        <div class="search-toolbar__item form-group m-0 pl-3">
+                            <input type="text" class="search-toolbar__input form-control" id="usr" placeholder="What are you searching for?">
+                        </div>
+                    </div>
+                    <div class="search-toolbar__list col-lg-3 py-2 px-0">
+                        <div class="search-toolbar__item form-group m-0">
+                            <input type="text" class="search-toolbar__input form-control" id="usr" placeholder="Location">
+                        </div>
+                    </div>
+                    <div class="search-toolbar__list col-lg-3 py-2 px-0">
+                        <div class="dropdown px-2 m-0">
+                            <button type="button" class="text-secondary btn btn-white dropdown-toggle" data-toggle="dropdown">
+                                Dropdown button
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-2 p-0 d-flex align-items-center">
+                        <button type="button" class="search-toolbar__btn btn btn-lg font-weight-bold">Search</button>
+                    </div>
+                </div>
+            </form>  
+        </div>
+    </section>
+    <section class="popular-city">
+        <div class="popular-city__container container">
+            <div class="popular-city__introduct row mx-0">
+                <div class="col-md-8">
+                    <div class="city-swipper__left">
+                        <p class="color-blue">MOST POPULAR CITIES</p>
+                        <h2>What's trending</h2>
+                    </div>
+                </div>
+                <div class="col-md-4 align-items-end d-flex justify-content-end">
+                    <div class="city-swipper__right">
+                        <a href="/" class="text-secondary text-decoration-none">
+                            See all guides
+                            <i class="fas fa-forward"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-city__wrapper-city row">
+                <div class="popular-city__row-first row m-0 p-0">
+                    <div class="col-lg-8 col-md-6 py-3">
+                        <a href="/" class="popular-city__link">
+                            <div class="popular-city__setup-img popular-city__setup-img--1 shadow-lg">
+                                <h3 class="font-weight-bold text-light">SAN FRANCISCO</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 py-3">
+                        <a href="/" class="popular-city__link">
+                            <div class="popular-city__setup-img popular-city__setup-img--2 shadow-lg">
+                                <h3 class="font-weight-bold text-light">LOS ANGELES</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="popular-city__row-second row m-0 p-0">
+                    <div class="col-lg-4 col-md-6 py-3">
+                        <a href="/" class="popular-city__link">
+                            <div class="popular-city__setup-img popular-city__setup-img--3 shadow-lg">
+                                <h3 class="font-weight-bold text-light">SANTAN MONICA</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 py-3">
+                        <a href="/" class="popular-city__link">
+                            <div class="popular-city__setup-img popular-city__setup-img--4 shadow-lg">
+                                <h3 class="font-weight-bold text-light">SAN DIEGO</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 py-3">
+                        <a href="/" class="popular-city__link">
+                            <div class="popular-city__setup-img popular-city__setup-img--5 shadow-lg">
+                                <h3 class="font-weight-bold text-light">FRESNO</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="app">
+        <div class="app__container container px-0">
+            <div class="app__top row mb-5 mx-0">
+                <div class="col-md-8">
+                    <div class="city-swipper__left">
+                        <p class="color-red">ONE-OF-A-KIND DIRECTORY APP</p>
+                        <h2>Discover great local businesses around you</h2>
+                    </div>
+                </div>
+                <div class="col-md-4 align-items-end d-flex justify-content-end">
+                    <div class="city-swipper__right">
+                        <a href="/" class="text-secondary text-decoration-none">
+                            See all guides
+                            <i class="fas fa-forward"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="app__bottom mt-4">
+                <div class="row d-flex justify-content-between mx-0">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="app__bottom-list">
+                            <div class="app__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="app__bottom-item text-left">
+                                <h5 class="font-weight-bold pb-2">FIND THE PERFECT PLACE</h5>
+                                <p class="text-secondary">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed in</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="app__bottom-list">
+                            <div class="app__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="app__bottom-item text-left">
+                                <h5 class="font-weight-bold pb-2">BOOK YOUR SEATS</h5>
+                                <p class="text-secondary">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="app__bottom-list">
+                            <div class="app__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="app__bottom-item text-left">
+                                <h5 class="font-weight-bold pb-2">ENJOY YOUR EVENING</h5>
+                                <p class="text-secondary">His room, a proper human room although a little too small, lay peacefully between its four familiar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="app__bottom-list">
+                            <div class="app__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="app__bottom-item text-left">
+                                <h5 class="font-weight-bold pb-2">EARN POINTS</h5>
+                                <p class="text-secondary">Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="food">
+        
+    </section>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 col-md-8">
+                        <div class="footer__directory">
+                            <h5 class="footer__directory-big font-weight-bold text-dark mb-3">DIRECTORY</h5>
+                            <p class="text-secondary footer__directory-text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                            <div>
+                                <a href="/" class="footer__directory-link"><i class="footer__directory-icon fab fa-facebook-square text-secondary"></i></a>
+                                <a href="/" class="footer__directory-link"><i class="footer__directory-icon fab fa-twitter-square text-secondary"></i></a>   
+                                <a href="/" class="footer__directory-link"><i class="footer__directory-icon fab fa-instagram-square text-secondary"></i></a>
+                                <a href="/" class="footer__directory-link"><i class="footer__directory-icon fas fa-envelope-open-text text-secondary"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 mb-4">
+                        <div class="footer__rentals">
+                            <h5 class="footer__rentals-big font-weight-bold text-dark mb-3">RENTALS</h5>
+                            <ul class="footer__rentals-list">
+                                <li class="list-unstyled"><a href="/" class="text-secondary footer__rentals-link">Rooms</a></li>
+                                <li class="list-unstyled"><a href="/" class="text-secondary footer__rentals-link">Map on top</a></li>
+                                <li class="list-unstyled"><a href="/" class="text-secondary footer__rentals-link">Side map</a></li>
+                                <li class="list-unstyled"><a href="/" class="text-secondary footer__rentals-link">No map</a></li>
+                                <li class="list-unstyled"><a href="/" class="text-secondary footer__rentals-link">Room detail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-12 mb-4">
+                        <div class="footer__pages">
+                            <h5 class="font-weight-bold text-dark mb-3 footer__pages-top">PAGES</h5>
+                            <ul class="footer__pages-list">
+                                <li class="list-unstyled"><a href="/" class="text-secondary footer__pages-link">Comparison</a></li>
+                                <li class="list-unstyled"><a href="/" class="text-secondary footer__pages-link">Team</a></li>
+                                <li class="list-unstyled"><a href="/" class="text-secondary footer__pages-link">Contact</a></li>
+                                <li class="list-unstyled"><a href="/" class="text-secondary footer__pages-link">Pricing</a></li>
+                                <li class="list-unstyled"><a href="/" class="text-secondary footer__pages-link">Room detail</a></li>
+                                <li class="list-unstyled"><a href="/" class="text-secondary footer__pages-link">Text page</a></li>
+                                <li class="list-unstyled"><a href="/" class="text-secondary footer__pages-link">F.A.Q.s</a></li>
+                                <li class="list-unstyled"><a href="/" class="text-secondary footer__pages-link">Coming soon</a></li>
+                                <li class="list-unstyled"><a href="/" class="text-secondary footer__pages-link">404 page</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-8 mb-4">
+                        <div class="footer__daily">
+                            <h5 class="font-weight-bold text-dark mb-3">DAILY OFFERS & DISCOUNTS</h5>
+                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
+                            <div class="form-group footer__daily-btn d-flex">
+                                <input type="email" class="form-control" placeholder="Your Email Address">
+                                <a href="/" class="btn btn-outline-dark"><i class="fas fa-paper-plane text-secondary footer__daily-send"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom py-4">
+            <div class="container">
+                <p class="m-0 text-white">© 2020, Your company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

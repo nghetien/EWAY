@@ -1,0 +1,48 @@
+.hero-home{
+    position: relative;
+    &__bg-img{
+        background-position:center;
+        background-size:cover;
+        height: 600px;
+        &--1{
+            background-image: url("./img/slide1.jpg");
+        }
+        &--2{
+            background-image: url("./img/slide2.jpg");
+        }
+        &--3{
+            background-image: url("./img/slide3.jpg");
+        }
+        &--4{
+            background-image: url("./img/slide4.jpg");
+        }
+    }
+    &__caption{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display:flex;
+        flex-direction: column;
+    }
+    @media screen and (min-width: 1010px) {
+        .hero-home__caption h1{
+          font-size: 4.5rem;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .hero-home__caption h1{
+          font-size: 1.5rem;
+        }
+    }
+    &__btn{
+        color: $white;
+        padding: 12px 25px;
+        border-radius: .7rem;
+        background-color: $blue-main;
+        &:hover{
+            background-color:$blue-main-dark;
+            color: $white;
+        }
+    }
+}

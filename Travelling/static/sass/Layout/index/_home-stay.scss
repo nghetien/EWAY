@@ -1,0 +1,66 @@
+.home-stay{
+    padding:6rem 0px;
+    &__item{
+        height: 400px;
+        width: 280px;
+        border-radius: 0.5rem;
+        &-text{
+            color: $blue-main-dark;
+        }
+    }
+    &__item-top{
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        &--1{
+            background-image: url("./img/home-stay1.jpg");
+        }
+        &--2{
+            background-image: url("./img/home-stay2.jpg");
+        }
+        &--3{
+            background-image: url("./img/home-stay3.jpg");
+        }
+        &--4{
+            background-image: url("./img/home-stay4.jpg");
+        }
+    }
+    &__item-top{
+        position: relative;
+        height: 200px;
+    }
+    &__icon{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        &>i{
+            padding: 1rem;
+            border-radius: 50%;
+            color: $white;
+            background-color: $gray-main;
+            transition: all 0.3s ease;
+            &:hover{
+                background-color: $red-main;
+                cursor: pointer;
+            }
+        }
+    }
+    &__owner{
+        display: flex;
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        width: 50px;
+        height: 50px;
+        &>img{
+            border-radius: 50%;
+            border: 2px solid $white;
+        }
+        &>p{
+            color: $white;
+            font-size: 1.2rem;
+            padding: 1rem;
+        }
+    }
+}

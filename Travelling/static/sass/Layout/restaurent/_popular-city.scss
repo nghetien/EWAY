@@ -1,0 +1,77 @@
+.popular-city{
+    &__container{
+        padding: 9rem 0 5rem 0;
+    }
+    &__introduct{
+        padding-bottom: 3rem;
+        display: flex;
+        justify-content: space-between;
+        &-content{
+
+        }
+        &-small{
+            color: $blue-main;
+        }
+        &-big{
+
+        }
+    }
+    &__wrapper-city{
+        margin:0;
+    }
+    &__detail{
+        display: flex;
+        align-items: center;
+        &-link{
+            line-height: 100%;
+            &>i{
+                margin-left: .5rem;
+            }
+        }
+    }
+    &__row-first{
+        width: 100%;
+    }
+    &__row-second{
+        width: 100%;
+    }
+    &__setup{
+        &-img{
+            background-position: center;
+            background-size: cover;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: .5rem;
+            height: 300px;
+
+            &--1{
+                background-image: url("./img/popular-city2.jpg");
+            }
+            &--2{
+                background-image: url("./img/popular-city1.jpg");
+            }
+            &--3{
+                background-image: url("./img/popular-city3.jpg");
+            }
+            &--4{
+                background-image: url("./img/popular-city4.jpg");
+            }
+            &--5{
+                background-image: url("./img/popular-city5.jpg");
+            }
+
+        }
+    }
+    &__link{
+        width: 100%;
+        text-decoration: none !important;
+        display: inline-block;
+        transition: all 0.5s ease;
+        &:hover{
+            transform: translateY(-.5rem);
+        }
+    }
+}

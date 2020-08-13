@@ -1,0 +1,55 @@
+.footer{
+    &__top{
+        padding: 6rem 0px;
+        background-color:$grey-main;
+    }
+    &__bottom{
+        background-color: $gray-dark;
+    }
+    &__directory{
+        &-icon{
+            &:hover{
+                color:$blue-main;
+            }
+        }
+        &-big{
+            letter-spacing: 0.1rem;
+        }
+        &-text{
+            letter-spacing: 0.05rem;
+        }
+    }
+    &__rentals{
+        &-big{
+            letter-spacing: 0.1rem;
+        }
+        &-link{
+            letter-spacing: 0.05rem;
+        }
+    }
+    &__pages{
+        &-big{
+            letter-spacing: 0.1rem;
+        }
+        &-link{
+            letter-spacing: 0.05rem;
+        }
+    }
+    &__daily{
+        &-btn{
+            border: 1px solid $gray-main;
+            background-color: $white;
+            border-radius: .5rem;
+            &>input{
+                border-radius: .6rem;
+                border: 0;
+            }
+            &>a{
+                border: 0;
+                &:hover>i{
+                    color: $white;
+                }
+            }
+        }
+    }
+}

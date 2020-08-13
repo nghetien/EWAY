@@ -1,0 +1,24 @@
+@import "./sass/Attribute/variable";
+@import "./sass/Attribute/color";
+@import "./sass/Attribute/animation";
+@import "./sass/Attribute/global";
+@import "./sass/Base/body";
+//-----------------------------//
+//global
+@import "./sass/Layout/top-nav";
+@import "./sass/Layout/footer";
+//-----------------------------//
+//index
+@import "./sass/Layout/index/hero-home";
+@import "./sass/Layout/index/booking";
+@import "./sass/Layout/index/city-swipper";
+@import "./sass/Layout/index/banner";
+@import "./sass/Layout/index/home-stay";
+//end-index
+//-----------------------------//
+//restaurent
+@import "./sass/Layout/restaurent/hero-restaurent";
+@import "./sass/Layout/restaurent/popular-city";
+@import "./sass/Layout/restaurent/app";
+@import "./sass/Layout/restaurent/search-toolbar";
+//end-restaurent

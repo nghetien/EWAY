@@ -1,0 +1,34 @@
+.city-swipper{
+    padding:6rem 0px;
+    &__introduce{
+        bottom: 10%;
+        left: 10%;
+        &>h3{
+            color: $white;
+            letter-spacing: .2rem;
+        }
+        &>p{
+            color: $white;
+            letter-spacing: .2rem;
+        }
+    }
+    &__swiper-slide{
+        background-position: center;
+        background-size: cover;
+        height: 450px;
+        width: 300px;
+        border-radius: 1rem;
+    }
+    &__left{
+        &>p{
+            letter-spacing: .2em;
+            font-weight: 700;
+            margin: 0;
+        }
+        &>h2{
+            margin-bottom: .5rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+    }
+}
