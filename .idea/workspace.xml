@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca4ae027-4163-4e93-af4d-68102716ade2" name="Default Changelist" comment="" />
+    <list default="true" id="ca4ae027-4163-4e93-af4d-68102716ade2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/pages/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/pages/sendmail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/pages/uploadfile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/src/img/login/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/src/img/login/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/src/phpmailer/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/src/phpmailer/OAuth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/src/phpmailer/PHPMailer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/src/phpmailer/POP3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/src/phpmailer/SMTP.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/src/phpmailer/credentical.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/src/scss/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/src/scss/login.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/src/scss/login.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/src/scss/uploadfile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/src/scss/uploadfile.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/src/scss/uploadfile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelling/static/js/jQuery/jQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/Travelling/static/js/jQuery/jQuery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelling/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Travelling/static/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Travelling/static/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Travelling/static/main.css.map" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +35,16 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fw3W2HqulYIDSqJXsARqbLh5EO" />
   <component name="ProjectViewState">
@@ -21,22 +54,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages/phpmailer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Login/src/library" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.xml" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/phpmailer" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/pages" />
-      <recent name="$PROJECT_DIR$/src/img/login" />
-      <recent name="$PROJECT_DIR$/Login1" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Login/src/library" />
       <recent name="$PROJECT_DIR$/pages/phpmailer" />
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/phpmailer" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Login/src/library" />
+      <recent name="$PROJECT_DIR$/src/phpmailer" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$/src/img/login" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -55,6 +89,8 @@
       <workItem from="1597205481627" duration="4945000" />
       <workItem from="1597221675393" duration="5762000" />
       <workItem from="1597229958871" duration="412000" />
+      <workItem from="1597286381187" duration="18548000" />
+      <workItem from="1597334223295" duration="341000" />
     </task>
     <servers />
   </component>
@@ -82,17 +118,21 @@
       <screen x="51" y="23" width="1389" height="877" />
     </state>
     <state x="675" y="194" key="NewPhpClassDialog/51.23.1389.877@51.23.1389.877" timestamp="1597144097946" />
-    <state x="661" y="392" key="NewPhpFileDialog" timestamp="1597222925140">
-      <screen x="49" y="23" width="1391" height="877" />
+    <state x="662" y="392" key="NewPhpFileDialog" timestamp="1597308914320">
+      <screen x="51" y="23" width="1389" height="877" />
     </state>
     <state x="-1045" y="468" key="NewPhpFileDialog/0.23.1440.877/-1866.23.1866.1057@-1866.23.1866.1057" timestamp="1597159105997" />
     <state x="661" y="392" key="NewPhpFileDialog/49.23.1391.877@49.23.1391.877" timestamp="1597222925140" />
-    <state x="662" y="392" key="NewPhpFileDialog/51.23.1389.877@51.23.1389.877" timestamp="1597205542173" />
+    <state x="662" y="392" key="NewPhpFileDialog/51.23.1389.877@51.23.1389.877" timestamp="1597308914320" />
     <state x="373" y="100" key="SettingsEditor" timestamp="1597224487280">
       <screen x="51" y="23" width="1389" height="877" />
     </state>
     <state x="-1399" y="143" key="SettingsEditor/0.23.1440.877/-1866.23.1866.1057@-1866.23.1866.1057" timestamp="1597160305422" />
     <state x="373" y="100" key="SettingsEditor/51.23.1389.877@51.23.1389.877" timestamp="1597224487280" />
+    <state x="503" y="112" width="670" height="676" key="search.everywhere.popup" timestamp="1597317141908">
+      <screen x="49" y="23" width="1391" height="877" />
+    </state>
+    <state x="503" y="112" width="670" height="676" key="search.everywhere.popup/49.23.1391.877@49.23.1391.877" timestamp="1597317141908" />
     <state x="577" y="380" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1597229495426">
       <screen x="51" y="23" width="1389" height="877" />
     </state>

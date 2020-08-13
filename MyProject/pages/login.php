@@ -16,8 +16,27 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link href="../src/scss/login.css" rel="stylesheet">
+    <!--    JQuery-->
+    <script src="../src/library/JQuery/jQuery.js"></script>
+    <!--JS-->
+    <script src="../src/js/Login/inputAnimation.js"></script>
 </head>
 <body>
+<!--    --><?php
+//        if(isset($_POST['login']) && !empty($_POST['email']) && !empty($_POST['password'])){
+//            $patternEmail = '/@/';
+//            $regexEmail = preg_match($patternEmail,$_POST['email'],$matches);
+//            if($regexEmail){
+//                echo "co @ trong user";
+//            }
+//            $patternEmail = '/@/';
+//            $regexEmail = preg_match($patternEmail,$_POST['email'],$matches);
+//            if($regexEmail){
+//                echo "co @ trong user";
+//            }
+//
+//        }
+//    ?>
     <section class="main">
         <div class="main__wrapper">
             <div class="main__row row">
@@ -37,26 +56,25 @@
                             <div class="main__form mb-4">
                                 <form method="POST">
                                     <div class="form-group">
-                                        <label for="email" class="main__label">EMAIL ADDRESS</label>
-                                        <input type="email" class="form-control main__input" placeholder="Enter email" id="email" name="email">
+                                        <label for="email" class="main__label" id="labelEmail">EMAIL OR USERNAME</label>
+                                        <input type="text" class="form-control main__input" placeholder="Email or Username" id="email" name="email">
                                     </div>
                                     <div class="form-group">
-                                        <label for="pwd" class="main__label">PASSWORD</label>
-                                        <input type="password" class="form-control main__input" placeholder="Enter password" id="pwd" name="password">
+                                        <label for="password" class="main__label"  id="labelPwd">PASSWORD</label>
+                                        <input type="password" class="form-control main__input" placeholder="Password" id="password" name="password">
                                     </div>
                                     <div class="form-group form-check d-flex justify-content-between" style="font-size: 0.9rem;">
                                         <label class="form-check-label">
-                                            <input class="form-check-input" type="checkbox"> Remember me
+                                            <input class="form-check-input" type="checkbox" name="checkbox"> Remember me
                                         </label>
                                         <a href="#">Forgot Password?</a>
                                     </div>
                                     <div class="main__btn d-flex justify-content-center">
-                                        <button type="submit" class="btn text-light">
+                                        <button type="submit" class="btn text-light" name="login">
                                             Login
                                             <i class="fas fa-arrow-right"></i>
                                         </button>
                                     </div>
-
                                 </form>
                             </div>
                             <div class="main__signup d-flex justify-content-center pt-3" style="font-size:0.9rem;">

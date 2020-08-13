@@ -22,6 +22,7 @@
         <a href="./pages/login.php" class="btn btn-outline-primary">Login</a>
         <a href="./pages/sendmail.php" class="btn btn-outline-primary">Send Mail</a>
         <a href="./pages/uploadfile.php" class="btn btn-outline-primary">Upload File</a>
+        <a href="./connectDB/connectDB.php" class="btn btn-outline-primary">Connect DataBase</a>
     </div>
 </body>
 </html>
