@@ -28,3 +28,4 @@ Lear git
 -git revert <tên id commit> : xoá đi commit chỉ định nào đó có thể đã cách vài commit (hạn chế dùng)
 -----------------------------------------------------------------------------------------------------
 -git push origin <tên nhánh> : tạo ra 1 nhánh nào đó và push lên github
+-git push -u origin master : push len github
