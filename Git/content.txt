@@ -1,0 +1,30 @@
+Project learn bootstrap
+-----------------------------------------------------------------------------------------------------
+Lear git
+-git init
+-git add
+-git status
+-git commit -m <tên comment>
+-----------------------------------------------------------------------------------------------------
+-git log : tất cả cả commit
+-git show + id log : kiểm tra từng commit
+-----------------------------------------------------------------------------------------------------
+-working directory : những file có sự thay đổi thì nằm trong đây
+-staging area : chỉ những file trong đây mới được commit
+-git repository : lưu lại tập hợp những commits
+-----------------------------------------------------------------------------------------------------
+-git checkout -- <tên file> : xoá những file có sự thay đổi
+-git reset <tên file>: đẩy file từ staging area về working directory
+-----------------------------------------------------------------------------------------------------
+-git checkout -b <tên nhánh> : tạo 1 nhánh mới
+-git branch -D <tên nhánh> : xoá 1 nhánh
+-git checkout <tên nhánh> : vào nhánh 
+-git merge : kéo thay đổi từ branch vào branch khác
+-----------------------------------------------------------------------------------------------------
+-git reset --soft <tên id commit> : quay lại cái commit có id đó (trạng thái staging area - xanh) 
+-git reset --mixed <tên id commit> : quay lại cái commit có id đó (trạng thái working directory - đỏ) 
+-git reset --hard <tên id commit> : bỏ hẳn các commit trên đường quay xuống id commit chỉ định 
+-----------------------------------------------------------------------------------------------------
+-git revert <tên id commit> : xoá đi commit chỉ định nào đó có thể đã cách vài commit (hạn chế dùng)
+-----------------------------------------------------------------------------------------------------
+-git push origin <tên nhánh> : tạo ra 1 nhánh nào đó và push lên github

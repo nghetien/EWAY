@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'IBM Plex Sans', sans-serif;
+  //overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #727E8C;
+  height: 100vh;
+}
+.main{
+  background-image: url("../img/login/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  position: relative;
+  &__row{
+    font-family: 'IBM Plex Sans Regular 400', sans-serif;
+    color: #475F7B;
+  }
+  &__container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  //---------------------------------
+  &__left{
+    background: #fff;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+  }
+  //---------------------------------
+  &__gg{
+    background-color: #DD4B39;
+    border-radius: 0.2rem;
+    display:flex;
+    position: relative;
+    &-link{
+      width: 100%;
+      color: #fff;
+      padding: 0.7rem;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover{
+        color: #fff;
+        text-decoration: none;
+      }
+      &>i{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        padding: 0.8rem;
+        border-right: 0.5px solid #475F7B;
+      }
+      &>span{
+        padding-left: 0.5rem;
+      }
+    }
+  }
+  //---------------------------------
+  &__form{
+
+  }
+  &__label{
+    font-size: .9rem;
+  }
+  &__input{
+    font-size: .9rem;
+  }
+  &__btn{
+    position: relative;
+    width: 100%;
+    background-color: #5A8DEE;
+    color: #fff;
+    border-radius: 0.2rem;
+    box-shadow: 0 2px 4px 0 rgba(90,141,238,.5);
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+      cursor: pointer;
+      transform: translateY(-2px);
+      box-shadow: 0 3px 5px 0 rgba(90,141,238,.5);
+    }
+    &>button>i{
+      position: absolute;
+      top: 50%;
+      right: 3%;
+      transform: translateY(-50%);
+    }
+  }
+  //---------------------------------
+  &__signup{
+    border-top:0.2px solid #6c757d;
+  }
+  //---------------------------------
+  &__right{
+    background-color: #F2F4F4;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+    display: flex;
+    align-items: center;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+}

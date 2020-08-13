@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca4ae027-4163-4e93-af4d-68102716ade2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1fw3W2HqulYIDSqJXsARqbLh5EO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages/phpmailer" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.xml" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/phpmailer" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$/src/img/login" />
+      <recent name="$PROJECT_DIR$/Login1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/phpmailer" />
+      <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/phpmailer" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca4ae027-4163-4e93-af4d-68102716ade2" name="Default Changelist" comment="" />
+      <created>1597115357529</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597115357529</updated>
+      <workItem from="1597115359192" duration="19000" />
+      <workItem from="1597128510959" duration="7418000" />
+      <workItem from="1597144043838" duration="554000" />
+      <workItem from="1597157784385" duration="13770000" />
+      <workItem from="1597197578401" duration="1880000" />
+      <workItem from="1597205481627" duration="4945000" />
+      <workItem from="1597221675393" duration="5762000" />
+      <workItem from="1597229958871" duration="412000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="563" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597220702525">
+      <screen x="49" y="23" width="1391" height="877" />
+    </state>
+    <state x="563" y="271" key="#com.intellij.fileTypes.FileTypeChooser/49.23.1391.877@49.23.1391.877" timestamp="1597220702525" />
+    <state x="535" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597230354992">
+      <screen x="51" y="23" width="1389" height="877" />
+    </state>
+    <state x="535" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/51.23.1389.877@51.23.1389.877" timestamp="1597230354992" />
+    <state x="610" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597134974648">
+      <screen x="51" y="23" width="1389" height="877" />
+    </state>
+    <state x="610" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/51.23.1389.877@51.23.1389.877" timestamp="1597134974648" />
+    <state x="524" y="246" key="EditFileWatcherDialog" timestamp="1597135029146">
+      <screen x="51" y="23" width="1389" height="877" />
+    </state>
+    <state x="524" y="246" key="EditFileWatcherDialog/51.23.1389.877@51.23.1389.877" timestamp="1597135029146" />
+    <state x="675" y="194" key="NewPhpClassDialog" timestamp="1597144097946">
+      <screen x="51" y="23" width="1389" height="877" />
+    </state>
+    <state x="675" y="194" key="NewPhpClassDialog/51.23.1389.877@51.23.1389.877" timestamp="1597144097946" />
+    <state x="661" y="392" key="NewPhpFileDialog" timestamp="1597222925140">
+      <screen x="49" y="23" width="1391" height="877" />
+    </state>
+    <state x="-1045" y="468" key="NewPhpFileDialog/0.23.1440.877/-1866.23.1866.1057@-1866.23.1866.1057" timestamp="1597159105997" />
+    <state x="661" y="392" key="NewPhpFileDialog/49.23.1391.877@49.23.1391.877" timestamp="1597222925140" />
+    <state x="662" y="392" key="NewPhpFileDialog/51.23.1389.877@51.23.1389.877" timestamp="1597205542173" />
+    <state x="373" y="100" key="SettingsEditor" timestamp="1597224487280">
+      <screen x="51" y="23" width="1389" height="877" />
+    </state>
+    <state x="-1399" y="143" key="SettingsEditor/0.23.1440.877/-1866.23.1866.1057@-1866.23.1866.1057" timestamp="1597160305422" />
+    <state x="373" y="100" key="SettingsEditor/51.23.1389.877@51.23.1389.877" timestamp="1597224487280" />
+    <state x="577" y="380" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1597229495426">
+      <screen x="51" y="23" width="1389" height="877" />
+    </state>
+    <state x="577" y="380" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/51.23.1389.877@51.23.1389.877" timestamp="1597229495426" />
+  </component>
+</project>
