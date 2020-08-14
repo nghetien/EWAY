@@ -16,7 +16,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link href="../src/scss/login.css" rel="stylesheet">
-    <!--    JQuery-->
+    <!--JQuery-->
     <script src="../src/library/JQuery/jQuery.js"></script>
     <!--JS-->
     <script src="../src/js/Login/inputAnimation.js"></script>

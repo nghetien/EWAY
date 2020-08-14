@@ -39,39 +39,10 @@ body{
     border-top-left-radius: 0.5rem;
   }
   //---------------------------------
-  &__gg{
-    background-color: #DD4B39;
-    border-radius: 0.2rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-    display:flex;
-    position: relative;
-    &-link{
-      width: 100%;
-      color: #fff;
-      padding: 0.7rem;
-      text-decoration: none;
-      cursor: pointer;
-      &:hover{
-        color: #fff;
-        text-decoration: none;
-      }
-      &>i{
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        padding: 0.8rem;
-        border-right: 0.5px solid rgba(0,0,0,0.35);
-      }
-      &>span{
-        padding-left: 0.5rem;
-      }
-    }
-  }
   //---------------------------------
   &__label{
+    margin-left: 0.2rem;
     font-size: .8rem;
-    margin-left: 1.75rem;
     display: inline-block;
   }
   &__input{
@@ -98,10 +69,7 @@ body{
       transform: translateY(-50%);
     }
   }
-  //---------------------------------
-  &__signup{
-    border-top:1px solid rgba(0,0,0,.15);
-  }
+
   //---------------------------------
   &__right{
     background-color: #F2F4F4;
@@ -113,21 +81,10 @@ body{
     border-top-right-radius: 0.5rem;
   }
 }
-//---------------------------------
 .borderInput{
   border:1px solid #007bff;
   color:#007bff!important;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-}
-.paddingLabelIn{
-  animation-name: labelIn;
-  animation-duration: 0.5s;
-  margin-left:0.2rem;
-}
-.paddingLabelOut{
-  animation-name: labelOut;
-  animation-duration: 0.5s;
-  margin-left:1.75rem;
 }
 .paddingTextInputIn{
   animation-name: textInputIn;
@@ -153,21 +110,5 @@ body{
   }
   100%{
     padding-left: 0.75rem;
-  }
-}
-@keyframes labelIn {
-  0%{
-    margin-left: 1.75rem;
-  }
-  100%{
-    margin-left: 0.2rem;
-  }
-}
-@keyframes labelOut {
-  0%{
-    margin-left: 0.2rem;
-  }
-  100%{
-    margin-left: 1.75rem;
   }
 }

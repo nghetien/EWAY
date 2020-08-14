@@ -38,38 +38,9 @@ body {
   border-bottom-left-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
 }
-.main__gg {
-  background-color: #DD4B39;
-  border-radius: 0.2rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  display: flex;
-  position: relative;
-}
-.main__gg-link {
-  width: 100%;
-  color: #fff;
-  padding: 0.7rem;
-  text-decoration: none;
-  cursor: pointer;
-}
-.main__gg-link:hover {
-  color: #fff;
-  text-decoration: none;
-}
-.main__gg-link > i {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  padding: 0.8rem;
-  border-right: 0.5px solid rgba(0, 0, 0, 0.35);
-}
-.main__gg-link > span {
-  padding-left: 0.5rem;
-}
 .main__label {
+  margin-left: 0.2rem;
   font-size: 0.8rem;
-  margin-left: 1.75rem;
   display: inline-block;
 }
 .main__input {
@@ -96,9 +67,6 @@ body {
   right: 3%;
   transform: translateY(-50%);
 }
-.main__signup {
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-}
 .main__right {
   background-color: #F2F4F4;
   padding-left: 1.5rem;
@@ -113,18 +81,6 @@ body {
   border: 1px solid #007bff;
   color: #007bff !important;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-
-.paddingLabelIn {
-  animation-name: labelIn;
-  animation-duration: 0.5s;
-  margin-left: 0.2rem;
-}
-
-.paddingLabelOut {
-  animation-name: labelOut;
-  animation-duration: 0.5s;
-  margin-left: 1.75rem;
 }
 
 .paddingTextInputIn {
@@ -155,21 +111,5 @@ body {
     padding-left: 0.75rem;
   }
 }
-@keyframes labelIn {
-  0% {
-    margin-left: 1.75rem;
-  }
-  100% {
-    margin-left: 0.2rem;
-  }
-}
-@keyframes labelOut {
-  0% {
-    margin-left: 0.2rem;
-  }
-  100% {
-    margin-left: 1.75rem;
-  }
-}
 
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=register.css.map */

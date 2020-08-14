@@ -20,6 +20,7 @@
 <body>
     <div class="container text-center mt-5">
         <a href="./pages/login.php" class="btn btn-outline-primary">Login</a>
+        <a href="./pages/register.php" class="btn btn-outline-primary">Register</a>
         <a href="./pages/sendmail.php" class="btn btn-outline-primary">Send Mail</a>
         <a href="./pages/uploadfile.php" class="btn btn-outline-primary">Upload File</a>
         <a href="./connectDB/connectDB.php" class="btn btn-outline-primary">Connect DataBase</a>
