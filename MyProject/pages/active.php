@@ -21,7 +21,7 @@
             WHERE TOKEN ="."'".$_GET['key']."'";
             if($connet->query($sql)){
                 $_SESSION['TOKEN']=$_GET['key'];
-                header('Refresh: 0; URL=profile.php');
+                header('Location:profile.php');
             }
         }
     }

@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(empty($_SESSION['TOKEN'])){
-        header('Refresh: 0; URL=login.php');
+        header('Location:login.php');
         exit();
     }
 ?>

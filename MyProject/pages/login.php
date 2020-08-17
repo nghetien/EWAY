@@ -1,8 +1,8 @@
 <?php
     session_start();
     if(isset($_SESSION['TOKEN'])){
-        if(strlen($_SESSION['TOKEN'])==128){
-            header('Refresh: 0; URL=profile.php');
+        if(strlen($_SESSION['TOKEN'])>1){
+            header('Location:profile.php');
         }
     }
 ?>
@@ -70,22 +70,22 @@
                     }
                     $row = $result->fetch_assoc();
                     $_SESSION['TOKEN'] =$row['TOKEN'];
-                    $msg = "<p class='msg text-success text-center' style='font-size: 0.8rem'>Đăng nhập thành công</p>";
+                    $msg = "<p class='msg text-success text-center' style='font-size: 0.8rem'>Login successfully</p>";
                     header('Refresh: 0; URL=profile.php');
                 }else{
-                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Mật khẩu hoặc tài khoản không đúng</p>";
+                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Account don't exist</p>";
                 }
             }else{
                 if(checkLogin($_POST['email'])){
-                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Mật khẩu không đúng</p>";
+                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Password is wrong</p>";
                 }else{
-                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Không đúng định dạng Username hoặc Email</p>";
+                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Incorrect account format</p>";
                 }
             }
+        }else{
+            (isset($_POST['email']))?$email=$_POST['email']:$email="";
+            (isset($_POST['password']))?$passWord=$_POST['password']:$passWord="";
         }
-//        else{
-//            $msg = "<p class='msg text-warning text-center' style='font-size: 0.8rem'>Bạn hãy nhập đầy đủ thông tin vào đây</p>";
-//        }
     ?>
     <section class="main">
         <div class="main__wrapper">
@@ -96,12 +96,6 @@
                             <div class="main__welcome p-4">
                                 <h3 class="text-center mt-3">Welcome Back</h3>
                             </div>
-                            <div class="main__gg my-4">
-                                <a href="#" class="main__gg-link text-center">
-                                    <i class="main__gg-icon fab fa-google"></i>
-                                    <span>Google</span>
-                                </a>
-                            </div>
                             <p class="text-secondary text-center" style="font-size: 0.8rem;">OR LOGIN WITH EMAIL</p>
                             <div class="main__form mb-4">
                                 <form method="POST">
@@ -109,21 +103,13 @@
                                         <label for="text" class="main__label" id="labelEmail">EMAIL OR USERNAME</label>
                                         <input type="text" class="form-control main__input" placeholder="Email or Username"
                                                id="email" name="email" required
-                                               value="<?php
-                                                   if(!empty($_COOKIE['email'])){
-                                                       echo $_COOKIE['email'];
-                                                   }
-                                               ?>">
+                                               value="<?php echo $email;?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="password" class="main__label"  id="labelPwd">PASSWORD</label>
                                         <input type="password" class="form-control main__input" placeholder="Password"
                                                id="password" name="password"  required
-                                               value="<?php
-                                                if(!empty($_COOKIE['password'])){
-                                                    echo $_COOKIE['password'];
-                                                }
-                                                ?>">
+                                               value="<?php echo $passWord;?>">
                                     </div>
                                     <div class="form-group form-check d-flex justify-content-between" style="font-size: 0.9rem;">
                                         <label class="form-check-label">
