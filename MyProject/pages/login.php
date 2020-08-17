@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(isset($_SESSION['TOKEN'])){
+        if(strlen($_SESSION['TOKEN'])==128){
+            header('Refresh: 0; URL=profile.php');
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,21 +30,63 @@
     <script src="../src/js/Login/inputAnimation.js"></script>
 </head>
 <body>
-<!--    --><?php
-//        if(isset($_POST['login']) && !empty($_POST['email']) && !empty($_POST['password'])){
-//            $patternEmail = '/@/';
-//            $regexEmail = preg_match($patternEmail,$_POST['email'],$matches);
-//            if($regexEmail){
-//                echo "co @ trong user";
-//            }
-//            $patternEmail = '/@/';
-//            $regexEmail = preg_match($patternEmail,$_POST['email'],$matches);
-//            if($regexEmail){
-//                echo "co @ trong user";
-//            }
-//
+    <?php
+        include "../src/php/funcCheckInput.php";
+        $token = "";
+        $email = "";
+        $passWord = "";
+        $msg = "";
+        if(isset($_POST['login']) && !empty($_POST['email']) && !empty($_POST['password'])){
+            $email = $_POST['email'];
+            $passWord = $_POST['password'];
+            if(checkLogin($_POST['email']) && checkLogin($_POST['password'])){
+                $severname = "localhost";
+                $username = "root";
+                $password = "";
+                $dbname = "myDataBase";
+                $connet = new mysqli($severname,$username,$password,$dbname);
+                $sql = "";
+                if(preg_match("/@/",$email)){
+                    $sql = "SELECT TOKEN,EMAIL,PASSWORD FROM USER WHERE EMAIL="."'".$email."'"." AND PASSWORD="."'".$passWord."'";
+
+                }else{
+                    $sql = "SELECT TOKEN,USERNAME,PASSWORD FROM USER WHERE USERNAME="."'".$email."'"." AND PASSWORD="."'".$passWord."'";
+                }
+                $result = $connet->query($sql);
+                if($result->num_rows ==1){
+                    if(!empty($_POST['checkbox'])){
+                        if(empty($_COOKIE['email']) || empty($_COOKIE['password'])){
+                            setcookie("email", $email, time()+3600, "/","", 0);
+                            setcookie("password", $passWord, time()+3600, "/","", 0);
+                        }else{
+                            $_COOKIE['email'] = $email;
+                            $_COOKIE['email'] = $passWord;
+                        }
+                    }else{
+                        if(!empty($_COOKIE['email']) && !empty($_COOKIE['password'])){
+                            setcookie("email","", time()-60, "/","", 0);
+                            setcookie("password","", time()-60, "/","", 0);
+                        }
+                    }
+                    $row = $result->fetch_assoc();
+                    $_SESSION['TOKEN'] =$row['TOKEN'];
+                    $msg = "<p class='msg text-success text-center' style='font-size: 0.8rem'>Đăng nhập thành công</p>";
+                    header('Refresh: 0; URL=profile.php');
+                }else{
+                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Mật khẩu hoặc tài khoản không đúng</p>";
+                }
+            }else{
+                if(checkLogin($_POST['email'])){
+                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Mật khẩu không đúng</p>";
+                }else{
+                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Không đúng định dạng Username hoặc Email</p>";
+                }
+            }
+        }
+//        else{
+//            $msg = "<p class='msg text-warning text-center' style='font-size: 0.8rem'>Bạn hãy nhập đầy đủ thông tin vào đây</p>";
 //        }
-//    ?>
+    ?>
     <section class="main">
         <div class="main__wrapper">
             <div class="main__row row">
@@ -56,12 +106,24 @@
                             <div class="main__form mb-4">
                                 <form method="POST">
                                     <div class="form-group">
-                                        <label for="email" class="main__label" id="labelEmail">EMAIL OR USERNAME</label>
-                                        <input type="text" class="form-control main__input" placeholder="Email or Username" id="email" name="email">
+                                        <label for="text" class="main__label" id="labelEmail">EMAIL OR USERNAME</label>
+                                        <input type="text" class="form-control main__input" placeholder="Email or Username"
+                                               id="email" name="email" required
+                                               value="<?php
+                                                   if(!empty($_COOKIE['email'])){
+                                                       echo $_COOKIE['email'];
+                                                   }
+                                               ?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="password" class="main__label"  id="labelPwd">PASSWORD</label>
-                                        <input type="password" class="form-control main__input" placeholder="Password" id="password" name="password">
+                                        <input type="password" class="form-control main__input" placeholder="Password"
+                                               id="password" name="password"  required
+                                               value="<?php
+                                                if(!empty($_COOKIE['password'])){
+                                                    echo $_COOKIE['password'];
+                                                }
+                                                ?>">
                                     </div>
                                     <div class="form-group form-check d-flex justify-content-between" style="font-size: 0.9rem;">
                                         <label class="form-check-label">
@@ -69,8 +131,9 @@
                                         </label>
                                         <a href="#">Forgot Password?</a>
                                     </div>
+                                    <?php echo $msg;?>
                                     <div class="main__btn d-flex justify-content-center">
-                                        <button type="submit" class="btn text-light" name="login">
+                                        <button type="submit" class="btn text-light main__btn-login" name="login" id="login">
                                             Login
                                             <i class="fas fa-arrow-right"></i>
                                         </button>
@@ -79,7 +142,7 @@
                             </div>
                             <div class="main__signup d-flex justify-content-center pt-3" style="font-size:0.9rem;">
                                 <p class="pr-2">Don't have an account?</p>
-                                <a href="#">Sign up</a>
+                                <a href="./register.php">Sign up</a>
                             </div>
                         </div>
                         <div class="main__right col-lg-6 col-md-6">

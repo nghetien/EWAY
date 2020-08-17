@@ -1,21 +1,27 @@
 <?php
+//        $sql = "
+//        CREATE TABLE USER
+//        (
+//        TOKEN CHAR(130) NOT NULL,
+//        ID INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+//        FIRSTNAME VARCHAR(30) NOT NULL,
+//        LASTNAME VARCHAR(30) NOT NULL,
+//        USERNAME VARCHAR(30) NOT NULL,
+//        EMAIL VARCHAR(50) NOT NULL,
+//        PASSWORD VARCHAR(30) NOT NULL,
+//        REG_DATE TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+//        ISACTIVE INT NOT NULL)
+//        ";
+//        if($connet->query($sql)){
+//            echo "successfully";
+//        } else {
+//            echo "Failded"."<br>". $connet->error;
+//        }
     $severname = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "MYDB";
+    $dbname = "myDataBase";
     $connet = new mysqli($severname,$username,$password,$dbname);
-
-
-//    $sql = "
-//    CREATE TABLE USER
-//    (ID INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-//    FIRSTNAME VARCHAR(30) NOT NULL,
-//    LASTNAME VARCHAR(30) NOT NULL,
-//    USERNAME VARCHAR(30) NOT NULL,
-//    EMAIL VARCHAR(50) NOT NULL,
-//    PASSWORD VARCHAR(30) NOT NULL,
-//    REG_DATE TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)
-//    ";
     $sql = "SELECT * FROM USER";
     $result = $connet->query($sql);
 
@@ -23,6 +29,7 @@
         echo "Data consits of ".$result->num_rows." lines";
         while($row = $result->fetch_assoc()){
             $data = "<br>";
+            $data .= "TOKEN:".$row['TOKEN']."--";
             $data .= "ID:".$row['ID']."--";
             $data .= "FIRSTNAME: ".$row['FIRSTNAME']."--";
             $data .= "LASTNAME: ".$row['LASTNAME']."--";
@@ -30,10 +37,11 @@
             $data .= "EMAIL: ".$row['EMAIL']."--";
             $data .= "PASSWORD: ".$row['PASSWORD']."--";
             $data .= "REG_DATE: ".$row['REG_DATE']."<br>";
+            $data .= "ISACTIVE: ".$row['ISACTIVE']."<br>";
             echo $data;
         }
     }else{
-        echo "0 results";
+        echo ($result->num_rows)."results";
     }
 
     $connet->close();

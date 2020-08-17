@@ -23,17 +23,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca4ae027-4163-4e93-af4d-68102716ade2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MyProject/pages/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyProject/src/img/register/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyProject/src/img/register/register.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyProject/src/js/Register/inputAnimation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyProject/src/scss/register.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProject/pages/active.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProject/pages/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProject/pages/profile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProject/src/img/profile/background-powerpoint-dep.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProject/src/img/profile/download.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProject/src/php/createToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProject/src/php/formEmailSend.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProject/src/php/funcCheckInput.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProject/src/php/sendEmail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProject/src/scss/profile.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/connectDB/connectDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/php/connectDB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyProject/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyProject/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/pages/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/pages/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/pages/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/pages/sendmail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/pages/uploadfile.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MyProject/src/scss/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/scss/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyProject/src/scss/login.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/scss/login.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyProject/src/scss/login.scss" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/scss/login.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/src/scss/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/scss/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/src/scss/register.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/scss/register.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/src/scss/register.scss" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/scss/register.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/src/scss/uploadfile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/src/scss/uploadfile.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/src/scss/uploadfile.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +68,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/nghetien/EWAY" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1fw3W2HqulYIDSqJXsARqbLh5EO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -62,23 +84,23 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MyProject/src/img/register" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MyProject/pages" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.xml" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/MyProject/src/img/register" />
-      <recent name="$PROJECT_DIR$/Login/src/library" />
-      <recent name="$PROJECT_DIR$/src/phpmailer" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/pages" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MyProject/pages" />
+      <recent name="$PROJECT_DIR$/MyProject/src/img/profile" />
       <recent name="$PROJECT_DIR$/MyProject/src/img/register" />
       <recent name="$PROJECT_DIR$/Login/src/library" />
       <recent name="$PROJECT_DIR$/pages/phpmailer" />
-      <recent name="$PROJECT_DIR$/pages" />
-      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MyProject/pages" />
+      <recent name="$PROJECT_DIR$/MyProject/src/php" />
+      <recent name="$PROJECT_DIR$/MyProject/src/library/phpmailer" />
+      <recent name="$PROJECT_DIR$/MyProject/src/img/profile" />
+      <recent name="$PROJECT_DIR$/MyProject/src/img/register" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -99,7 +121,13 @@
       <workItem from="1597229958871" duration="412000" />
       <workItem from="1597286381187" duration="18548000" />
       <workItem from="1597334223295" duration="1236000" />
-      <workItem from="1597401477019" duration="4988000" />
+      <workItem from="1597401477019" duration="7599000" />
+      <workItem from="1597466575659" duration="6089000" />
+      <workItem from="1597474638128" duration="2475000" />
+      <workItem from="1597495648751" duration="13695000" />
+      <workItem from="1597543725590" duration="7090000" />
+      <workItem from="1597590893893" duration="6989000" />
+      <workItem from="1597630333567" duration="13429000" />
     </task>
     <servers />
   </component>
@@ -116,6 +144,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="563" y="271" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597220702525">
@@ -138,10 +167,11 @@
       <screen x="51" y="23" width="1389" height="877" />
     </state>
     <state x="675" y="194" key="NewPhpClassDialog/51.23.1389.877@51.23.1389.877" timestamp="1597144097946" />
-    <state x="-1045" y="468" key="NewPhpFileDialog" timestamp="1597401562513">
-      <screen x="-1866" y="23" width="1866" height="1057" />
+    <state x="660" y="392" key="NewPhpFileDialog" timestamp="1597638731843">
+      <screen x="47" y="23" width="1393" height="877" />
     </state>
-    <state x="-1045" y="468" key="NewPhpFileDialog/0.23.1440.877/-1866.23.1866.1057@-1866.23.1866.1057" timestamp="1597401562513" />
+    <state x="-1045" y="468" key="NewPhpFileDialog/0.23.1440.877/-1866.23.1866.1057@-1866.23.1866.1057" timestamp="1597602053292" />
+    <state x="660" y="392" key="NewPhpFileDialog/47.23.1393.877@47.23.1393.877" timestamp="1597638731843" />
     <state x="661" y="392" key="NewPhpFileDialog/49.23.1391.877@49.23.1391.877" timestamp="1597222925140" />
     <state x="662" y="392" key="NewPhpFileDialog/51.23.1389.877@51.23.1389.877" timestamp="1597308914320" />
     <state x="373" y="100" key="SettingsEditor" timestamp="1597224487280">

@@ -77,13 +77,15 @@ body {
 }
 .main__btn {
   position: relative;
-  width: 100%;
   background-color: #5A8DEE;
   color: #fff;
   border-radius: 0.2rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   display: inline-block;
   transition: all 0.2s ease-in-out;
+}
+.main__btn-login {
+  width: 100%;
 }
 .main__btn:hover {
   cursor: pointer;

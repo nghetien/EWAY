@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  background-color: #F2F4F4;
+}
+.header{
+  height: 400px;
+  &__background{
+    height: 100%;
+    background-image: url("../img/profile/background-powerpoint-dep.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+}
+.avatar{
+  &__container{
+    position: relative;
+  }
+  &__content{
+    position: absolute;
+    top:-120px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+  }
+  &__image{
+    border-radius: 50%;
+    border: 10px solid #fff;
+  }
+}
+.profile{
+  margin-top: 10rem;
+  &__container{
+    height: 500px;
+  }
+  //----------------------------
+  &__left{
+    &-content{
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 0.2rem;
+    }
+  }
+  &__ID{
+    border-bottom: 1px solid rgba(0,0,0,0.35);
+  }
+  &__setting{
+    display: flex;
+    justify-content: space-between;
+  }
+  //----------------------------
+  &__right{
+    border-radius: 0.2rem;
+    &-content{
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 0.2rem;
+    }
+  }
+}
