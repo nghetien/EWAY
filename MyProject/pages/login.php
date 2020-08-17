@@ -30,6 +30,7 @@
     <script src="../src/js/Login/inputAnimation.js"></script>
 </head>
 <body>
+
     <?php
         include "../src/php/funcCheckInput.php";
         include "../src/php/connectDB.php";
@@ -52,18 +53,12 @@
                 $result = $connet->query($sql);
                 if($result->num_rows ==1){
                     if(!empty($_POST['checkbox'])){
-                        if(empty($_COOKIE['email']) || empty($_COOKIE['password'])){
-                            setcookie("email", $email, time()+3600, "/","", 0);
-                            setcookie("password", $passWord, time()+3600, "/","", 0);
-                        }else{
-                            $_COOKIE['email'] = $email;
-                            $_COOKIE['email'] = $passWord;
-                        }
-                    }else{
                         if(!empty($_COOKIE['email']) && !empty($_COOKIE['password'])){
-                            setcookie("email","", time()-60, "/","", 0);
-                            setcookie("password","", time()-60, "/","", 0);
+                            setcookie( "email", "", time()- 60, "/","", 0);
+                            setcookie( "password", "", time()- 60, "/","", 0);
                         }
+                        setcookie("email", $email, time()+3600, "/","", 0);
+                        setcookie("password", $passWord, time()+3600, "/","", 0);
                     }
                     $row = $result->fetch_assoc();
                     $_SESSION['TOKEN'] =$row['TOKEN'];
@@ -79,7 +74,8 @@
                     $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Incorrect account format</p>";
                 }
             }
-        }else{
+        }
+        else{
             (isset($_POST['email']))?$email=$_POST['email']:$email="";
             (isset($_POST['password']))?$passWord=$_POST['password']:$passWord="";
         }
@@ -100,13 +96,25 @@
                                         <label for="text" class="main__label" id="labelEmail">EMAIL OR USERNAME</label>
                                         <input type="text" class="form-control main__input" placeholder="Email or Username"
                                                id="email" name="email" required
-                                               value="<?php echo $email;?>">
+                                               value="<?php
+                                                    if(!empty($_COOKIE['email'])){
+                                                        echo  $_COOKIE['email'];
+                                                    }else{
+                                                        echo $email;
+                                                    }
+                                               ?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="password" class="main__label"  id="labelPwd">PASSWORD</label>
                                         <input type="password" class="form-control main__input" placeholder="Password"
                                                id="password" name="password"  required
-                                               value="<?php echo $passWord;?>">
+                                               value="<?php
+                                                   if(!empty($_COOKIE['password'])){
+                                                       echo  $_COOKIE['password'];
+                                                   }else{
+                                                       echo $passWord;
+                                                   }
+                                               ?>">
                                     </div>
                                     <div class="form-group form-check d-flex justify-content-between" style="font-size: 0.9rem;">
                                         <label class="form-check-label">

@@ -10,6 +10,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   background-color: #F2F4F4;
+  height: 2000px;
 }
 
 .header {
@@ -27,13 +28,14 @@ body {
 }
 .avatar__content {
   position: absolute;
-  top: -120px;
+  top: -150px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
 }
 .avatar__image {
+  width: 300px;
   border-radius: 50%;
   border: 10px solid #fff;
 }
@@ -55,6 +57,19 @@ body {
 .profile__setting {
   display: flex;
   justify-content: space-between;
+}
+.profile__image {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+.profile__image-details {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
 }
 .profile__right {
   border-radius: 0.2rem;

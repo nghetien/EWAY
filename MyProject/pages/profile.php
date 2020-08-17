@@ -30,12 +30,9 @@
 </head>
 <body>
     <?php
+        include "../src/php/connectDB.php";
         $token = $_SESSION['TOKEN'];
-        $severname = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "myDataBase";
-        $connet = new mysqli($severname,$username,$password,$dbname);
+        $connet = connetDataBase();
         $sql = "SELECT * FROM USER WHERE TOKEN="."'".$token."'";
         $result = $connet->query($sql);
         $row = $result->fetch_assoc();
@@ -47,7 +44,7 @@
     <section class="avatar">
         <div class="avatar__container">
             <div class="avatar__content">
-                <img src="../src/img/profile/download.jpeg" class="avatar__image">
+                <img src="../src/img/profile/meomeo.jpg" class="avatar__image" width="100%">
             </div>
         </div>
     </section>
@@ -77,14 +74,20 @@
                             </div>
                         </div>
                     </div>
+                    <div class="profile__image mt-4 p-3 shadow">
+                        <div class="profile__image-details">
+                            <img src="../src/img/profile/avatar.jpeg" width="100%">
+                            <img src="../src/img/profile/avatar.jpeg" width="100%">
+                            <img src="../src/img/profile/avatar.jpeg" width="100%">
+                            <img src="../src/img/profile/avatar.jpeg" width="100%">
+                        </div>
+                    </div>
                 </div>
                 <div class="profile__right col-lg-8">
                     <div class="profile__right-content shadow">
-                        <p>Ảnh</p>
-                        <div class="profile__image d-flex">
-                            <img src="../src/img/profile/avatar.jpeg" class="d-block mx-1">
-                            <img src="../src/img/profile/avatar.jpeg" class="d-block mx-1">
-                            <img src="../src/img/profile/avatar.jpeg" class="d-block mx-1">
+                        <p>Status</p>
+                        <div class="profile__status">
+                            <img src="../src/img/profile/status.jpg" width="100%">
                         </div>
                     </div>
                 </div>
