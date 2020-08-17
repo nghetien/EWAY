@@ -113,5 +113,46 @@ body {
     padding-left: 0.75rem;
   }
 }
+.smallPwd {
+  color: #dc3545 !important;
+  position: relative;
+}
+.smallPwd::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 20%;
+  height: 2px;
+  background-color: #dc3545 !important;
+}
+
+.mediumPwd {
+  color: #ffc107 !important;
+  position: relative;
+}
+.mediumPwd::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #ffc107 !important;
+}
+
+.strongPwd {
+  color: #28a745 !important;
+  position: relative;
+}
+.strongPwd::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #28a745 !important;
+}
 
 /*# sourceMappingURL=register.css.map */

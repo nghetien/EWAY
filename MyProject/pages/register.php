@@ -30,6 +30,7 @@
     <script src="../src/library/JQuery/jQuery.js"></script>
     <!--JS-->
     <script src="../src/js/Register/inputAnimation.js"></script>
+    <script src="../src/js/Register/passwordAnimation.js"></script>
 </head>
 <body>
     <?php
@@ -46,7 +47,7 @@
         $msgLname = "<p class='text-secondary my-0 p-0' style='font-size: 0.7rem;margin-left: 0.2rem'>Chỉ bao gồm chữ cái</p>";
         $msgUserName = "<p class='text-secondary my-0 p-0' style='font-size: 0.7rem;margin-left: 0.2rem'>Gồm trên 5 kí tự: bao gồm chữ cái hoặc số</p>";
         $msgEmail = "<p class='text-secondary my-0 p-0' style='font-size: 0.7rem;margin-left: 0.2rem'>Yêu cầu đúng dạng địa chỉ Email</p>";
-        $msgPwd = "<p class='text-secondary my-0 p-0' style='font-size: 0.7rem;margin-left: 0.2rem'>Gồm trên 5 kí tụ: ít nhất 1 kí tự hoa và 2 số và không có kí tự đặc biệt</p>";
+        $msgPwd = "<p class='text-secondary my-0 p-0' id='msgPwd' style='font-size: 0.7rem;margin-left: 0.2rem'>Gồm trên 5 kí tụ: ít nhất 1 kí tự hoa và 2 số và không có kí tự đặc biệt</p>";
         if(isset($_POST['register']) && !empty($_POST['firstname']) && !empty($_POST['lastname'])
             && !empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['password'])){
             $fName = $_POST['firstname'];
@@ -130,7 +131,7 @@
                     <div class="main__content row">
                         <div class="main__left col-lg-6 col-md-6 p-4">
                             <div class="main__welcome p-4">
-                                <h3 class="text-center mt-3">Sign Up</h3>
+                                <h3 class="text-center mt-3">Register</h3>
                             </div>
                             <p class="text-secondary text-center mb-4" style="font-size: 0.8rem;">Please enter your details to sign up and be part of our great community</p>
                             <div class="main__form mb-4">
@@ -160,7 +161,8 @@
                                     <div class="form-group mb-5">
                                         <label for="password" class="main__label" id="labelPwd">PASSWORD</label>
                                         <input type="password" class="form-control main__input" placeholder="Password" id="password" name="password" required value="<?php echo $passWord;?>">
-                                        <?php echo $msgPwd; ?>
+<!--                                        --><?php //echo $msgPwd; ?>
+                                        <p class='text-secondary my-0 p-0' id='msgPwd' style='font-size: 0.7rem;margin-left: 0.2rem'>Gồm trên 5 kí tụ: ít nhất 1 kí tự hoa và 2 số và không có kí tự đặc biệt</p>
                                     </div>
                                     <?php echo $msg; ?>
                                     <div class="main__btn d-flex justify-content-center">
@@ -170,6 +172,9 @@
                                         </button>
                                     </div>
                                 </form>
+                            </div>
+                            <div class="main__login text-center">
+                                <a href="login.php">Login</a>
                             </div>
                         </div>
                         <div class="main__right col-lg-6 col-md-6">

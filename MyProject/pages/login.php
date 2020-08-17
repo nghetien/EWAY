@@ -142,7 +142,7 @@
                             </div>
                             <div class="main__signup d-flex justify-content-center pt-3" style="font-size:0.9rem;">
                                 <p class="pr-2">Don't have an account?</p>
-                                <a href="./register.php">Sign up</a>
+                                <a href="./register.php">Register</a>
                             </div>
                         </div>
                         <div class="main__right col-lg-6 col-md-6">

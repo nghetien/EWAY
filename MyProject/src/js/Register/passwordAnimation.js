@@ -1,0 +1,28 @@
+$(document).ready(()=>{
+    $("#password").keydown(()=>{
+        if($("#password").val().length==0){
+            $("#msgPwd").removeClass("smallPwd");
+            $("#msgPwd").removeClass("mediumPwd");
+            $("#msgPwd").removeClass("strongPwd");
+            $("#msgPwd").html("Gồm trên 5 kí tụ: ít nhất 1 kí tự hoa và 2 số và không có kí tự đặc biệt");
+        }
+        if($("#password").val().length>1){
+            $("#msgPwd").removeClass("strongPwd");
+            $("#msgPwd").removeClass("mediumPwd");
+            $("#msgPwd").html("Small");
+            $("#msgPwd").addClass("smallPwd");
+        }
+        if($("#password").val().length>5){
+            $("#msgPwd").removeClass("strongPwd");
+            $("#msgPwd").removeClass("smallPwd");
+            $("#msgPwd").html("Medium");
+            $("#msgPwd").addClass("mediumPwd");
+        }
+        if($("#password").val().length>10){
+            $("#msgPwd").removeClass("mediumPwd");
+            $("#msgPwd").removeClass("smallPwd");
+            $("#msgPwd").html("Strong");
+            $("#msgPwd").addClass("strongPwd");
+        }
+    });
+});

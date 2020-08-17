@@ -70,8 +70,8 @@
                                 <p>Email: <?php echo $row["EMAIL"] ;?></p>
                                 <p>Time Create:
                                     <?php
-                                    $date = strtotime($row["REG_DATE"]);
-                                    echo date("d-m-Y H:i:s");
+                                        $date = strtotime($row["REG_DATE"]);
+                                        echo date("d-m-Y H:i:s",$date);
                                     ?></p>
                                 <p>Is Active: <?php if($row["ISACTIVE"]==1){echo "true";}else{echo "false";} ;?></p>
                             </div>
