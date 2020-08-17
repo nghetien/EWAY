@@ -24,13 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca4ae027-4163-4e93-af4d-68102716ade2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/pages/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/pages/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/pages/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/img/profile/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/img/profile/download.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/scss/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/scss/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/scss/profile.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/scss/profile.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/scss/profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/scss/profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/src/php/connectDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/php/connectDB.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +211,7 @@
       <workItem from="1597590893893" duration="6989000" />
       <workItem from="1597630333567" duration="17029000" />
       <workItem from="1597654093908" duration="7444000" />
-      <workItem from="1597672493619" duration="8864000" />
+      <workItem from="1597672493619" duration="9368000" />
     </task>
     <servers />
   </component>
