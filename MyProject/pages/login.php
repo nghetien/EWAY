@@ -32,6 +32,7 @@
 <body>
     <?php
         include "../src/php/funcCheckInput.php";
+        include "../src/php/connectDB.php";
         $token = "";
         $email = "";
         $passWord = "";
@@ -40,17 +41,13 @@
             $email = $_POST['email'];
             $passWord = $_POST['password'];
             if(checkLogin($_POST['email']) && checkLogin($_POST['password'])){
-                $severname = "localhost";
-                $username = "root";
-                $password = "";
-                $dbname = "myDataBase";
-                $connet = new mysqli($severname,$username,$password,$dbname);
+                $connet = connetDataBase();
                 $sql = "";
                 if(preg_match("/@/",$email)){
-                    $sql = "SELECT TOKEN,EMAIL,PASSWORD FROM USER WHERE EMAIL="."'".$email."'"." AND PASSWORD="."'".$passWord."'";
+                    $sql = "SELECT TOKEN,EMAIL,PASSWORD FROM USER WHERE EMAIL="."'".$email."'"." AND PASSWORD="."'".md5($passWord)."'";
 
                 }else{
-                    $sql = "SELECT TOKEN,USERNAME,PASSWORD FROM USER WHERE USERNAME="."'".$email."'"." AND PASSWORD="."'".$passWord."'";
+                    $sql = "SELECT TOKEN,USERNAME,PASSWORD FROM USER WHERE USERNAME="."'".$email."'"." AND PASSWORD="."'".md5($passWord)."'";
                 }
                 $result = $connet->query($sql);
                 if($result->num_rows ==1){

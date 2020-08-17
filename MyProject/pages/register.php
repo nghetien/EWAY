@@ -62,14 +62,9 @@
                 if($numUserName+ $numEmail == 0){
                     $token = md5($email.$userName.time());
                     if(sendEmail($token,$fName,$lName,$email)){
-                        $token = "'".$token."'";
-                        $fName = "'".$fName."'";
-                        $lName = "'".$lName."'";
-                        $userName = "'".$userName."'";
-                        $email = "'".$email."'";
-                        $passWord = "'".$passWord."'";
+                        $passWord = md5($passWord);
                         $sql = "INSERT INTO USER (TOKEN, FIRSTNAME, LASTNAME, USERNAME, EMAIL, PASSWORD, ISACTIVE)
-                                VALUES ($token, $fName, $lName, $userName, $email, $passWord,0)";
+                                VALUES ("."'".$token."'".","."'".$fName."'".","."'".$lName."'".","."'".$userName."'".","."'".$email."'".","."'".$passWord."'".",0)";
                         if($connet->query($sql)){
                             $check = true;
                             $msg = "The system has sent an email to your email";
