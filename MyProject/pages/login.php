@@ -120,7 +120,7 @@
                                         <label class="form-check-label">
                                             <input class="form-check-input" type="checkbox" name="checkbox"> Remember me
                                         </label>
-                                        <a href="#">Forgot Password?</a>
+                                        <a href="forgotpwd.php">Forgot Password?</a>
                                     </div>
                                     <?php echo $msg;?>
                                     <div class="main__btn d-flex justify-content-center">

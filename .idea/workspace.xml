@@ -23,15 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca4ae027-4163-4e93-af4d-68102716ade2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MyProject/pages/forgotpwd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyProject/src/scss/forgotpwd.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/php/connectDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/php/connectDB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/pages/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/src/php/sendEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/php/sendEmail.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/blog/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -39,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -164,6 +168,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/MyProject/pages" />
@@ -212,6 +217,7 @@
       <workItem from="1597630333567" duration="17029000" />
       <workItem from="1597654093908" duration="7444000" />
       <workItem from="1597672493619" duration="9368000" />
+      <workItem from="1597716418916" duration="2484000" />
     </task>
     <servers />
   </component>
@@ -256,13 +262,13 @@
       <screen x="51" y="23" width="1389" height="877" />
     </state>
     <state x="675" y="194" key="NewPhpClassDialog/51.23.1389.877@51.23.1389.877" timestamp="1597144097946" />
-    <state x="660" y="392" key="NewPhpFileDialog" timestamp="1597638731843">
-      <screen x="47" y="23" width="1393" height="877" />
+    <state x="662" y="392" key="NewPhpFileDialog" timestamp="1597716502359">
+      <screen x="51" y="23" width="1389" height="877" />
     </state>
     <state x="-1045" y="468" key="NewPhpFileDialog/0.23.1440.877/-1866.23.1866.1057@-1866.23.1866.1057" timestamp="1597602053292" />
     <state x="660" y="392" key="NewPhpFileDialog/47.23.1393.877@47.23.1393.877" timestamp="1597638731843" />
     <state x="661" y="392" key="NewPhpFileDialog/49.23.1391.877@49.23.1391.877" timestamp="1597222925140" />
-    <state x="662" y="392" key="NewPhpFileDialog/51.23.1389.877@51.23.1389.877" timestamp="1597308914320" />
+    <state x="662" y="392" key="NewPhpFileDialog/51.23.1389.877@51.23.1389.877" timestamp="1597716502359" />
     <state x="373" y="100" key="SettingsEditor" timestamp="1597224487280">
       <screen x="51" y="23" width="1389" height="877" />
     </state>
