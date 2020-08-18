@@ -2,9 +2,9 @@
     include "../src/global/connectDB.php";
     include "../src/global/funcCheckInput.php";
     $connet = connetDataBase();
-    $sql = "SELECT * FROM USER WHERE RESETPWD="."'".$_GET['key']."'";
+    $sql = "SELECT * FROM USER WHERE RESETPWD="."'".$_GET['key']."'"."AND CHECKRESET="."1";
     $result = $connet->query($sql);
-    if($result->num_rows == 0){
+    if($result->num_rows >0 ){
         exit();
     }
 ?>
@@ -42,7 +42,7 @@
                 $connet = connetDataBase();
                 $password = md5($_POST['password1']);
                 $resetPwd = bin2hex(random_bytes(10));
-                $sql = "UPDATE USER SET PASSWORD="."'".$password."'".", RESETPWD= "."'".$resetPwd."'"."WHERE RESETPWD = "."'".$_GET['key']."'";
+                $sql = "UPDATE USER SET PASSWORD="."'".$password."'".", CHECKRESET=" ."1"." WHERE RESETPWD = "."'".$_GET['key']."'";
                 if($connet ->query($sql)){
                     $check=true;
                     $msg = "Successfully";

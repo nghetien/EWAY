@@ -64,8 +64,8 @@
                     $resetPwd = md5($token.time());
                     if(sendEmail($token,$fName,$lName,$email)){
                         $passWord = md5($passWord);
-                        $sql = "INSERT INTO USER (TOKEN, RESETPWD, FIRSTNAME, LASTNAME, USERNAME, EMAIL, PASSWORD, ISACTIVE)
-                                VALUES ("."'".$token."'".","."'".$resetPwd."'".","."'".$fName."'".","."'".$lName."'".","."'".$userName."'".","."'".$email."'".","."'".$passWord."'".",0)";
+                        $sql = "INSERT INTO USER (TOKEN, RESETPWD, CHECKRESET, FIRSTNAME, LASTNAME, USERNAME, EMAIL, PASSWORD, ISACTIVE)
+                                VALUES ("."'".$token."'".","."'".$resetPwd."'".",1,"."'".$fName."'".","."'".$lName."'".","."'".$userName."'".","."'".$email."'".","."'".$passWord."'".",0)";
                         if($connet->query($sql)){
                             $check = true;
                             $msg = "The system has sent an email to your email";

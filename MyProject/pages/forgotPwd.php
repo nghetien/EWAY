@@ -33,7 +33,7 @@
         if($result->num_rows >0){
             $row = $result->fetch_assoc();
             $resetPwd = md5($row['TOKEN'].time());
-            $sql2 = "UPDATE USER SET RESETPWD="."'".$resetPwd."'"."WHERE EMAIL = "."'".$_POST['email']."'";
+            $sql2 = "UPDATE USER SET RESETPWD="."'".$resetPwd."'".", CHECKRESET =".'0'." WHERE EMAIL = "."'".$_POST['email']."'";
             $connet->query($sql2);
             $result = $connet->query($sql1);
             $row = $result->fetch_assoc();

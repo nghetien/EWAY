@@ -2,6 +2,7 @@
 //        $sql = "
 //        CREATE TABLE USER( TOKEN CHAR(150) NOT NULL,
 //                            RESETPWD CHAR(150) NOT NULL,
+//                            CHECKRESET INT NOT NULL,
 //                            ID INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 //                            FIRSTNAME VARCHAR(30) NOT NULL,
 //                            LASTNAME VARCHAR(30) NOT NULL,
@@ -11,7 +12,6 @@
 //                            REG_DATE TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 //                            ISACTIVE INT NOT NULL)
 //        ";
-
     function connetDataBase(){
         $severname = "localhost";
         $username = "root";

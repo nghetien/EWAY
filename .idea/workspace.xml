@@ -23,24 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca4ae027-4163-4e93-af4d-68102716ade2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MyProject/pages/forgotPwd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyProject/pages/resetPwd.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyProject/src/scss/resetpwd.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/pages/forgotpwd.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/pages/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/pages/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/pages/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/pages/forgotPwd.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/pages/forgotPwd.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyProject/pages/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/pages/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/library/phpmailer/PHPMailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/library/phpmailer/PHPMailer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/library/phpmailer/SMTP.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/library/phpmailer/SMTP.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/php/connectDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/global/connectDB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/php/formEmailSend.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/global/formEmailSend.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/php/formResetPwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/global/formResetPwd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/php/funcCheckInput.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/global/funcCheckInput.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/php/sendEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/global/sendEmail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/scss/forgotpwd.css" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/scss/forgotpwd.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/scss/forgotpwd.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/scss/forgotpwd.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/src/scss/forgotpwd.scss" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/scss/forgotpwd.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/pages/resetPwd.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/pages/resetPwd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/src/global/connectDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/global/connectDB.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +218,7 @@
       <workItem from="1597654093908" duration="7444000" />
       <workItem from="1597672493619" duration="9368000" />
       <workItem from="1597716418916" duration="7013000" />
-      <workItem from="1597723603712" duration="2888000" />
+      <workItem from="1597723603712" duration="3834000" />
     </task>
     <servers />
   </component>
