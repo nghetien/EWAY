@@ -23,9 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca4ae027-4163-4e93-af4d-68102716ade2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/MyProject/pages/forgotPwd.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/pages/forgotPwd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/pages/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/pages/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/pages/resetPwd.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/pages/resetPwd.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyProject/src/global/connectDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/src/global/connectDB.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +215,7 @@
       <workItem from="1597654093908" duration="7444000" />
       <workItem from="1597672493619" duration="9368000" />
       <workItem from="1597716418916" duration="7013000" />
-      <workItem from="1597723603712" duration="3834000" />
+      <workItem from="1597723603712" duration="4106000" />
     </task>
     <servers />
   </component>
