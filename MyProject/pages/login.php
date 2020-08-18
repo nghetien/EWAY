@@ -32,8 +32,8 @@
 <body>
 
     <?php
-        include "../src/php/funcCheckInput.php";
-        include "../src/php/connectDB.php";
+        include "../src/global/funcCheckInput.php";
+        include "../src/global/connectDB.php";
         $token = "";
         $email = "";
         $passWord = "";
@@ -43,41 +43,48 @@
             $passWord = $_POST['password'];
             if(checkLogin($_POST['email']) && checkLogin($_POST['password'])){
                 $connet = connetDataBase();
-                $sql = "";
                 if(preg_match("/@/",$email)){
-                    $sql = "SELECT TOKEN,EMAIL,PASSWORD FROM USER WHERE EMAIL="."'".$email."'"." AND PASSWORD="."'".md5($passWord)."'";
+                    $sql = "SELECT EMAIL FROM USER WHERE EMAIL="."'".$email."'";
 
                 }else{
-                    $sql = "SELECT TOKEN,USERNAME,PASSWORD FROM USER WHERE USERNAME="."'".$email."'"." AND PASSWORD="."'".md5($passWord)."'";
+                    $sql = "SELECT USERNAME FROM USER WHERE USERNAME="."'".$email."'";
                 }
                 $result = $connet->query($sql);
-                if($result->num_rows ==1){
-                    if(!empty($_POST['checkbox'])){
-                        if(!empty($_COOKIE['email']) && !empty($_COOKIE['password'])){
-                            setcookie( "email", "", time()- 60, "/","", 0);
-                            setcookie( "password", "", time()- 60, "/","", 0);
-                        }
-                        setcookie("email", $email, time()+3600, "/","", 0);
-                        setcookie("password", $passWord, time()+3600, "/","", 0);
+                if($result->num_rows >0){
+                    if(preg_match("/@/",$email)){
+                        $sql = "SELECT TOKEN,EMAIL,PASSWORD FROM USER WHERE EMAIL="."'".$email."'"." AND PASSWORD="."'".md5($passWord)."'";
+
+                    }else{
+                        $sql = "SELECT TOKEN,USERNAME,PASSWORD FROM USER WHERE USERNAME="."'".$email."'"." AND PASSWORD="."'".md5($passWord)."'";
                     }
-                    $row = $result->fetch_assoc();
-                    $_SESSION['TOKEN'] =$row['TOKEN'];
-                    $msg = "<p class='msg text-success text-center' style='font-size: 0.8rem'>Login successfully</p>";
-                    header('Refresh: 0; URL=profile.php');
+                    $result = $connet->query($sql);
+                    if($result->num_rows ==1){
+                        if(!empty($_POST['checkbox'])){
+                            if(!empty($_COOKIE['email']) && !empty($_COOKIE['password'])){
+                                setcookie( "email", "", time()- 60, "/","", 0);
+                                setcookie( "password", "", time()- 60, "/","", 0);
+                            }
+                            setcookie("email", $email, time()+3600, "/","", 0);
+                            setcookie("password", $passWord, time()+3600, "/","", 0);
+                        }
+                        $row = $result->fetch_assoc();
+                        $_SESSION['TOKEN'] =$row['TOKEN'];
+                        $msg = "<p class='msg text-success text-center' style='font-size: 0.8rem'>Login successfully</p>";
+                        header('Refresh: 0; URL=profile.php');
+                    }else{
+                        $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Login faild: Username or Password is wrong</p>";
+                    }
                 }else{
-                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Account don't exist</p>";
+                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Username or Email don't exist</p>";
                 }
             }else{
-                if(checkLogin($_POST['email'])){
-                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Password is wrong</p>";
-                }else{
-                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Incorrect account format</p>";
+                if(checkLogin($email)){
+                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Password Incorrect account format</p>";
+                }
+                if(checkLogin($passWord)){
+                    $msg = "<p class='msg text-danger text-center' style='font-size: 0.8rem'>Email Incorrect account format</p>";
                 }
             }
-        }
-        else{
-            (isset($_POST['email']))?$email=$_POST['email']:$email="";
-            (isset($_POST['password']))?$passWord=$_POST['password']:$passWord="";
         }
     ?>
     <section class="main">
@@ -120,7 +127,7 @@
                                         <label class="form-check-label">
                                             <input class="form-check-input" type="checkbox" name="checkbox"> Remember me
                                         </label>
-                                        <a href="forgotpwd.php">Forgot Password?</a>
+                                        <a href="forgotPwd.php">Forgot Password?</a>
                                     </div>
                                     <?php echo $msg;?>
                                     <div class="main__btn d-flex justify-content-center">

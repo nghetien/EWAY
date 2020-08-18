@@ -4,7 +4,6 @@
     require "../src/library/phpmailer/SMTP.php";
     require "../src/library/phpmailer/Exception.php";
     use PHPMailer\PHPMailer\PHPMailer;
-    include "connectDB.php";
 
     function sendEmail($token,$fName,$lName,$email){
         $mail = new PHPMailer();
@@ -21,7 +20,7 @@
         $mail->isHTML(true);
 
         $link = 'http://localhost/MyProject/pages/active.php?key='.$token;
-        $html_content = file_get_contents('../src/php/formEmailSend.html');
+        $html_content = file_get_contents('../src/global/formEmailSend.html');
         $html_content = preg_replace('/{link}/', $link, $html_content);
 
         $mail->Subject = 'Welcome '.$fName." ".$lName." to Eway";
@@ -33,7 +32,7 @@
             return true;
         }
     }
-    function sendEmailToken($email,$token){
+    function sendEmailToken($email,$resetPwd){
         $mail = new PHPMailer();
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
@@ -47,8 +46,8 @@
         $mail->addReplyTo(EMAIL);
         $mail->isHTML(true);
 
-        $link = 'http://localhost/MyProject/pages/forgotpwd.php?key='.$token;
-        $html_content = file_get_contents('../src/php/formEmailSend.html');
+        $link = 'http://localhost/MyProject/pages/resetPwd.php?key='.$resetPwd;
+        $html_content = file_get_contents('../src/global/formResetPwd.html');
         $html_content = preg_replace('/{link}/', $link, $html_content);
 
         $mail->Subject = "Please reset your password";

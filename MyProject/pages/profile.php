@@ -30,7 +30,7 @@
 </head>
 <body>
     <?php
-        include "../src/php/connectDB.php";
+        include "../src/global/connectDB.php";
         $token = $_SESSION['TOKEN'];
         $connet = connetDataBase();
         $sql = "SELECT * FROM USER WHERE TOKEN="."'".$token."'";

@@ -34,9 +34,9 @@
 </head>
 <body>
     <?php
-        include "../src/php/funcCheckInput.php";
-        include "../src/php/sendEmail.php";
-        include "../src/php/connectDB.php";
+        include "../src/global/funcCheckInput.php";
+        include "../src/global/sendEmail.php";
+        include "../src/global/connectDB.php";
         $fName = "";
         $lName = "";
         $userName = "";
@@ -61,10 +61,11 @@
                 $numEmail =  $result2->num_rows;
                 if($numUserName+ $numEmail == 0){
                     $token = md5($email.$userName.time());
+                    $resetPwd = md5($token.time());
                     if(sendEmail($token,$fName,$lName,$email)){
                         $passWord = md5($passWord);
-                        $sql = "INSERT INTO USER (TOKEN, FIRSTNAME, LASTNAME, USERNAME, EMAIL, PASSWORD, ISACTIVE)
-                                VALUES ("."'".$token."'".","."'".$fName."'".","."'".$lName."'".","."'".$userName."'".","."'".$email."'".","."'".$passWord."'".",0)";
+                        $sql = "INSERT INTO USER (TOKEN, RESETPWD, FIRSTNAME, LASTNAME, USERNAME, EMAIL, PASSWORD, ISACTIVE)
+                                VALUES ("."'".$token."'".","."'".$resetPwd."'".","."'".$fName."'".","."'".$lName."'".","."'".$userName."'".","."'".$email."'".","."'".$passWord."'".",0)";
                         if($connet->query($sql)){
                             $check = true;
                             $msg = "The system has sent an email to your email";
